@@ -9,22 +9,25 @@
 
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script src="FlexSlider/jquery.flexslider.js"></script>
 
-	<script type="text/javascript" src="scripts.js"></script>
-	<script src="jQuery.js"></script>
-	<script src="superfish.js"></script>  <!-- no files linked for these scripts. -->
+ <!-- // <script src="superfish.js"></script>   -->
 
-	<script>
-
-	jQuery(document).ready(function(){
-		jQuery('ul.sf-menu').superfish();
-	});
-
-	</script>
-
+	<!-- no files linked for these scripts. -->
+	<link rel="stylesheet" href="FlexSlider/flexslider.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
 
-	<link href="superfish.css" rel="stylesheet" media="screen">
+<!-- 	<link href="superfish.css" rel="stylesheet" media="screen"> -->
+	<script type="text/javascript" src="scripts.js"></script>
+
+	<script>
+	// $(document).ready(function(){
+	// 	$('ul.sf-menu').superfish();
+	// 	$('.flexslider').flexslider();
+	// });
+	</script>
+
+	
 
 	
 
@@ -35,48 +38,111 @@
 
 <div id= "container-wrapper"> 
 		<div id= "header" class="mainHeader">
-		<div id="logo"><img src="images/Peterbuilt.png">    <!-- (add img or logo here) --></div>
+		<div id="logo"><img src="images/Peterbuilt.png"/><div> <div id="logo-text">with <span id="dc">DigitalCrafts</span></div></div>
+		</div>
 
-			<div id="logo"> <!-- (add img or logo here) --></div>
+			
+			
+		</div>
 
-			<div id="nav-bar-container">
+		<div id="nav-bar-container">
 
-				<div id="nav-bar">
+			<div id="nav-bar">
 
-					<li class="select-button">Home</li>
-					<li class="select-button">Digital Projects</li>
-					<li class="select-button">Home Improvement Projects</li>
-					<li class="select-button">Blog</li>
-					<li class="select-button">About</li>
-					<li class="select-button">Other</li>
+				<li class="select-button">Home</li>
+				<li class="select-button">Digital Projects</li>
+				<li class="select-button">Home Improvement Projects</li>
+				<li class="select-button">Blog</li>
+				<li class="select-button">About</li>
+				<li class="select-button">Other</li>
 
-				</div>
-				
 			</div>
+				
 		</div>
 
 		<div id="body">
 			<div id="slider-wrapper">
 				<div id="slider-box">
-					<div id="slider-text"></div>
+					<div class="flexslider">
+					  <ul class="slides">
+					    <li>
+					      <img src="images/BadlandsSunrise2.jpg"/>
+					      <p class="flex-caption">Badlands Sunrise</p>
+					    </li>
+					    <li>
+					      <img src="images/city-skyline.png" />
+					      <p class="flex-caption">City Skyline</p>
+					    </li>
+					    <li>
+					      <img src="images/row-houses.png" />
+					      <p class="flex-caption">Row-Houses</p>
+					    </li>
+					  </ul>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div id="body-blocks">
 			<div class="topic-box">
-				<div class="heading"></div>
-				<div class="body-block-text"></div>
+				<h4 class="heading">SOCIAL MEDIA</h4>
+				<div class="body-block-text">Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</div>
 			</div>
 			<div class="topic-box">
-				<div class="heading"></div>
-				<div class="body-block-text"></div>
+				<h4 class="heading">TRAVEL</h4>
+				<div class="body-block-text">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</div>
 			</div>
 			<div class="topic-box">
-				<div class="heading"></div>
-				<div class="body-block-text"></div>
+				<h4 class="heading">PROJECTS</h4>
+				<div class="body-block-text">Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident..</div>
 			</div>
 		</div>
+		<div id="blog-container">
+			<div id="blog-header"><h4>Articles</h4></div>
+			<div id="blog-submit-info">Submitted by Admin on 11/06/2015</div>
+			<div id="blog-article-photo"> <img src="images/BadlandsSunrise2.jpg"/></div>
+			<div id="blog-body">Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			<div id=""></div>
+		</div>
+
+		<div id=""></div>
+
+
+
+<!-- container-wrapper end		 -->
 </div>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
